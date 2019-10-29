@@ -21,7 +21,7 @@ import * as React from 'react'
 import { useCallback, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { StyledFrame } from '../SyledFrame'
-import styled from 'styled-components'
+import styled, { StyledComponent } from 'styled-components'
 import { Z_INDEX } from '../../Globals'
 import { GlobalStyles, Button, padding, font, color } from '@tinacms/styles'
 
@@ -111,7 +111,7 @@ export const ModalOverlay = styled.div`
   padding: 0;
 `
 
-export const ModalHeader = styled.div`
+export const ModalHeader: StyledComponent<'div', {}> = styled.div`
   height: 3.5rem;
   display: flex;
   align-items: center;
