@@ -129,7 +129,7 @@ export const ModalBody = styled.div<{ padded?: boolean }>`
   margin: 0;
 `
 
-export const ModalActions = styled.div`
+export const ModalActions: StyledComponent<'div', {}, {}> = styled.div`
   display: flex;
   justify-content: flex-end;
   border-radius: 0 0 0.3rem 0.3rem;
